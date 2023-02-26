@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <title>Adrioan Wong's Portfolio</title>
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -13,13 +13,18 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Adrian Wong</h1>
+    <div class="profile-photo-and-name">
+      <figure>
+        <img src="assets/images/profile-image.png" alt="My Profile Photo">
+      </figure>
+      <h1>Adrian Wong</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact Me</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="assets/cv.pdf">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +32,7 @@
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>Bringing your website to life</h2>
     </div>
   </section>
 
@@ -36,12 +41,12 @@
     <section class="page-section" id="about">
       <h2>About Me</h2>
       <div class="page-section-content">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A natus, quis commodi possimus aspernatur temporibus ab, reprehenderit libero, repellendus nulla cumque magnam eos eligendi unde inventore. Qui placeat reiciendis quibusdam!</p>
-          <br/>
           <p>
-            Pellentesque blandit mollis libero, at venenatis mi vestibulum a. In augue ante, rutrum at condimentum eget, congue in justo. Cras dictum eros a libero luctus porttitor. Pellentesque semper justo tellus, quis gravida odio efficitur nec. Aliquam est tellus, vehicula non tellus ut, aliquet maximus dolor. Fusce tincidunt nulla sed mattis elementum. Praesent volutpat elit in convallis suscipit. Sed sed justo nec metus pellentesque porta id egestas arcu. Duis consequat viverra imperdiet. Aenean justo sem, maximus ac magna vel, pharetra aliquam nulla. Pellentesque sed diam orci. Donec eget ante ac mauris consectetur laoreet. Nunc id elit a nisi aliquam semper.
-          </p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A natus, quis commodi possimus aspernatur temporibus ab, reprehenderit libero, repellendus nulla cumque magnam eos eligendi unde inventore. Qui placeat reiciendis quibusdam!</p>
+            <br/>
+            <p>
+              Pellentesque blandit mollis libero, at venenatis mi vestibulum a. In augue ante, rutrum at condimentum eget, congue in justo. Cras dictum eros a libero luctus porttitor. Pellentesque semper justo tellus, quis gravida odio efficitur nec. Aliquam est tellus, vehicula non tellus ut, aliquet maximus dolor. Fusce tincidunt nulla sed mattis elementum. Praesent volutpat elit in convallis suscipit. Sed sed justo nec metus pellentesque porta id egestas arcu. Duis consequat viverra imperdiet. Aenean justo sem, maximus ac magna vel, pharetra aliquam nulla. Pellentesque sed diam orci. Donec eget ante ac mauris consectetur laoreet. Nunc id elit a nisi aliquam semper.
+            </p>
       </div>
     </section>
 
@@ -49,11 +54,41 @@
     <section class="page-section" id="work">
       <h2>Work</h2>
       <div class="page-section-content" id="portfolios">
-        <div class="portfolio" id="portfolio1"></div>
-        <div class="portfolio" id="portfolio2"></div>
-        <div class="portfolio" id="portfolio3"></div>
-        <div class="portfolio" id="portfolio4"></div>
-        <div class="portfolio" id="portfolio5"></div>
+        <!-- portfolio1 -->
+        <a href="https://adriwg.github.io/horiseon-landing-page/" id="portfolio1">
+          <div class="portfolio-description">
+            <div class="title">Horiseon Social Solution Services</div>
+            <div class="skills">HTML / CSS</div>
+          </div>
+        </a>
+        <!-- portfolio2 -->
+        <a href="https://calculator.com/" id="portfolio2">
+          <div class="portfolio-description">
+            <div class="title">Calculator</div>
+            <div class="skills">React / Javascript / CSS</div>
+          </div>
+        </a>
+        <!-- portfolio3 -->
+        <a href="https://pastelpuzzle.com/" id="portfolio3">
+          <div class="portfolio-description">
+            <div class="title">Pastel Puzzels</div>
+            <div class="skills">MERN Stack</div>
+          </div>
+        </a>
+        <!-- portfolio4 -->
+        <a href="https://surfacademyuk.com/" id="portfolio4">
+          <div class="portfolio-description">
+            <div class="title">Surfing Academy</div>
+            <div class="skills">HTML / CSS</div>
+          </div>
+        </a>
+        <!-- portfolio5 -->
+        <a href="https://runbuddymobile.com/" id="portfolio5">
+          <div class="portfolio-description">
+            <div class="title">Run Buddy</div>
+            <div class="skills">HTML / CSS</div>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -62,11 +97,21 @@
       <h2>Contact Me</h2>
       <div class="page-section-content">
         <ul class="contact-info">
-          <li>+44 012345678901</li>
-          <li>adrianwg04@gmail.com</li>
-          <li>GitHub</li>
-          <li>Twitter</li>
-          <li>Sportify</li>
+          <li>
+            <a href="tel:++44012345678901">+44 012345678901</a>
+          </li>
+          <li>
+            <a href="mailto:adrianwg04@gmail.com">adrianwg04@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/adriwg/my-portfolio">GitHub</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Adrianwg22">Twitter</a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/playlist/6e8VpQ400WvibQMCHD06ji?si=a66f5f69f5734a49&nd=1">Sportify</a>
+           </li>
         </ul>
       </div>
     </section>
