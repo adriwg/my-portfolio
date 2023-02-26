@@ -1,0 +1,160 @@
+body {
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    background-color: #30308c;
+    padding: 20px 20px;
+}
+
+header h1 {
+    color: #FFF;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+nav ul li:last-child{
+    margin-right: 0 ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-display: flex;
+    -webkit-justify-content: flex-end;
+    -webkit-align-items: flex-end;
+    background:  #7477aa url("../images/02-hero-bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+    height: 220px;
+    background-blend-mode: overlay;
+}
+
+.hero-banner div h2 {
+    padding: 20px;
+    color: #FFF;
+    background-color: rgb(0,0,0,0.5);
+    border-radius: 0 10px 0 0;
+}
+
+.page-wrapper {
+    padding: 0 50px;
+}
+
+.page-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    -webkit-display: flex;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: stretch;
+    margin: 30px 20px;
+}
+
+.page-section h2{
+    min-width: 200px;
+    width: 200px;
+    font-size: 45px;
+    text-align: right;
+    border-right: 4px solid #CCC;
+    padding: 0 10px;
+    line-height: 54px;
+    color: #30308c;
+}
+
+.page-section p{
+    line-height: 18px;
+}
+
+.page-section-content{
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    padding: 10px 40px;
+}
+
+#portfolios{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 200px 200px;
+    grid-template-areas:
+    "project1 project1";
+    gap: 10px 10px;
+}
+
+.portfolio {
+    background-color: grey;
+}
+
+#portfolio1{
+    grid-area: project1;
+    background: url("../images/02-portfolio-1.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+#portfolio2{
+    background: url("../images/02-portfolio-2.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+#portfolio3{
+    background: url("../images/02-portfolio-3.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+#portfolio4{
+    background: url("../images/02-portfolio-4.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+#portfolio5{
+    background: url("../images/02-portfolio-5.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+#contact .page-section-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-display: flex;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: center;
+}
+
+.contact-info {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+}
+
+
+
+
+
