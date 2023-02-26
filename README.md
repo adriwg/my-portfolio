@@ -13,9 +13,14 @@ N/A
 The portfolio is designed to be responsive and can be accessed through the link on PC and mobile devices:
 [Link text](https://adriwg.github.io/horiseon-landing-page/)
 
-Screenshots (Desktop, tablet, mobile):
+### Screenshots
+Desktop:
 ![Desktop Layout](https://adriwg.github.io/my-portfolio/assets/images/desktop-layout.png)
+
+Tablet:
 ![Tablet Layout](https://adriwg.github.io/my-portfolio/assets/images/tablet-layout.png)
+
+Mobile:
 ![Mobile Layout](https://adriwg.github.io/my-portfolio/assets/images/mobile-layout.png)
 
 ## Credits
