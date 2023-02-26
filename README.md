@@ -15,13 +15,19 @@ The portfolio is designed to be responsive and can be accessed through the link 
 
 ### Screenshots
 Desktop:
+<div style="text-align:left">
 ![Desktop Layout](https://adriwg.github.io/my-portfolio/assets/images/desktop-layout.png)
+</div>
 
 Tablet:
+<div style="text-align:left">
 ![Tablet Layout](https://adriwg.github.io/my-portfolio/assets/images/tablet-layout.png)
+</div>
 
 Mobile:
+<div style="text-align:left">
 ![Mobile Layout](https://adriwg.github.io/my-portfolio/assets/images/mobile-layout.png)
+</div>
 
 ## Credits
 
