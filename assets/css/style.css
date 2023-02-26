@@ -13,11 +13,9 @@ body {
 
 header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    -webkit-display: flex;
-    -webkit-justify-content: space-between;
-    -webkit-align-items: center;
     background-color: var(--primary-color);
     padding: 20px 50px;
 }
@@ -26,9 +24,6 @@ header .profile-photo-and-name {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    -webkit-display: flex;
-    -webkit-justify-content: flex-start;
-    -webkit-align-items: center;
 }
 
 header .profile-photo-and-name figure {
@@ -38,7 +33,6 @@ header .profile-photo-and-name figure {
     border: 2px solid #FFF;
     background-color: #FFF;
     overflow: hidden;
-
 }
 
 header .profile-photo-and-name figure img {
@@ -54,20 +48,22 @@ header .profile-photo-and-name h1 {
 
 /*** Main Navigation ***/
 
+nav {
+    flex-grow: 0.5;
+    max-width: 700px;
+}
+
 nav ul{
     margin:0;
     padding:0;
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     font-size: 20px;
-    margin-right: 60px;
-}
-
-nav ul li:last-child{
-    margin-right: 0 ;
 }
 
 nav ul li a {
@@ -85,9 +81,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    -webkit-display: flex;
-    -webkit-justify-content: flex-end;
-    -webkit-align-items: flex-end;
     background: #4f5e6c url("../images/02-hero-bg.jpg") 0 0 no-repeat;
     background-size: cover;
     height: 220px;
@@ -114,10 +107,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-    -webkit-display: flex;
-    -webkit-justify-content: flex-start;
-    -webkit-align-items: stretch;
-    margin: 30px 20px;
+    margin: 30px 0;
 }
 
 .page-section h2{
@@ -137,7 +127,6 @@ nav ul li a:hover {
 
 .page-section-content{
     flex-grow: 1;
-    -webkit-flex-grow: 1;
     padding: 10px 40px;
 }
 
@@ -212,16 +201,12 @@ nav ul li a:hover {
     font-weight: bold;
 }
     
-
 /*** Contact Section ***/
 
 #contact .page-section-content{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    -webkit-display: flex;
-    -webkit-justify-content: flex-start;
-    -webkit-align-items: center;
 }
 
 .contact-info {
@@ -230,11 +215,9 @@ nav ul li a:hover {
     list-style-type: none;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    -webkit-display: flex;
-    -webkit-justify-content: space-between;
-    -webkit-align-items: center;
     font-size: 18px;
 }
 
@@ -247,6 +230,118 @@ nav ul li a:hover {
     color:var(--primary-color);
 }
 
+/** Media Queries **/
+
+@media only screen and (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        padding:0;
+    }
+
+    header .profile-photo-and-name {
+        width:100%;
+        background-color: var(--secondary-color);
+        padding: 10px;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    .hero-banner {
+        justify-content: center;
+    }
+
+    .page-section {
+        display: block;
+    }
+
+    .page-section h2{
+        width: auto;
+        text-align: left;
+        border-right:none;
+        border-bottom: 4px solid #CCC;
+        padding: 12px 0;
+        line-height: auto;
+    }
+
+    .page-section p{
+        line-height: auto;
+    }
+
+    .page-section-content{
+        padding: 20px 10px;
+    }
+
+    .contact-info {
+        font-size:16px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        display: block;
+        padding:0;
+    }
+
+    header .profile-photo-and-name {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .hero-banner div h2 {
+        font-size:20px;
+        letter-spacing: 1px;
+    }
+
+    .page-wrapper {
+        padding: 0 20px;
+    }
+
+    .page-section {
+        margin: 10px 0;
+    }
+
+    .page-section h2{
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .page-section p{
+        line-height: auto;
+    }
+
+    .page-section-content{
+        padding: 20px 0;
+    }
+
+    .portfolio-description{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .portfolio-description .title{
+        font-size: 18px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
 
 
 
